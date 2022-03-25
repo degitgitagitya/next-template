@@ -1,0 +1,11 @@
+version: '3.3'
+
+services:
+  next-template:
+    container_name: next-template
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '8090:3000'
+    restart: always
